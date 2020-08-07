@@ -7,6 +7,9 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World!'
 
+@app.route('/create-order')
+def create_order():
+    return "new order!"
 
 if __name__ == '__main__':
     app.run()
